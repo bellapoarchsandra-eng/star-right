@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>STAR RIGHT — Shine in Your Style</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="STAR RIGHT — premium wigs, lotions and handbags for men & women. Shop stylish fashion accessories.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="STAR RIGHT homepage">
+        <svg class="logo" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 2l2.7 5.5L20 9l-4 3.9L17.4 20 12 16.9 6.6 20 8 12.9 4 9l5.3-1.5L12 2z"/>
+        </svg>
+        <span class="brand-name">STAR RIGHT</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="btn-outline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>STAR RIGHT — Shine in Your Style</h1>
+          <p class="lead">Premium wigs, nourishing lotions and stylish handbags for both men and women.</p>
+          <p><a class="btn" href="products.html">Shop Products</a> <a class="btn-outline" href="about.html">Learn More</a></p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <h2>Explore Our Collections</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <img src="wig 4.jpg" alt="Selection of wigs on display">
+          <h3>Wigs</h3>
+          <p>Human hair, synthetic and lace-front styles — crafted for comfort and style.</p>
+          <p><a class="link" href="products.html#wigs">View Wigs</a></p>
+        </article>
+
+        <article class="card">
+          <img src="lotion s.jpg" alt="Bottles of skincare lotions">
+          <h3>Lotions</h3>
+          <p>Moisturising and grooming lotions created for all skin types — for men & women.</p>
+          <p><a class="link" href="products.html#lotions">View Lotions</a></p>
+        </article>
+
+        <article class="card">
+          <img src="handbag.png" alt="Handbags for men and women">
+          <h3>Handbags</h3>
+          <p>Everyday and travel bags — refined designs for him and her.</p>
+          <p><a class="link" href="products.html#handbags">View Handbags</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2>Featured Picks</h2>
+      <div class="grid grid-3">
+        <div class="product-card">
+          <img src="wig.jpg" alt="Flawless Lace Wig product photo">
+          <h3>Flawless Lace Wig</h3>
+          <p class="price">$129.00</p>
+          <p class="small">Lightweight, breathable cap with natural hairline.</p>
+          <p><a class="btn-small" href="products.html">View</a></p>
+        </div>
+        <div class="product-card">
+          <img src="lotion u.jpg" alt="Hydra Glow Lotion bottle">
+          <h3>Hydra Glow Lotion</h3>
+          <p class="price">$24.00</p>
+          <p class="small">Deep hydration without greasiness.</p>
+          <p><a class="btn-small" href="products.html">View</a></p>
+        </div>
+        <div class="product-card">
+          <img src="handbag 4.jpg" alt="Classic Tote handbag">
+          <h3>Classic Tote</h3>
+          <p class="price">$89.00</p>
+          <p class="small">Durable leather-look tote with organised compartments.</p>
+          <p><a class="btn-small" href="products.html">View</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand-footer"><strong>STAR RIGHT</strong> — Shine in Your Style</p>
+        <p>Contact: <a href="mailto:starright@gmail.com">starright@gmail.com</a> • WhatsApp: +250 780 136 939</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Simple nav toggle for small screens (progressive enhancement)
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const navList = document.getElementById('nav-list');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        navList.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
+</html>
